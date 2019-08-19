@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<nav role="navigation" id="navbar" class="navbar mynav">
+<nav role="navigation" id="navbar" class="navbar navbar-inverse mynav">
     <div class="container">
         <a href="{% url 'home' %}" class="navbar-brand mynav">Star Social</a>
 
@@ -31,10 +31,10 @@
                 <li><a href="#">Post</a></li>
                 <li><a href="#">Groups</a></li>
                 <li><a href="#">Create Group</a></li>
-                <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
+                <li><a href="{% url 'accounts:logout' %}"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
             {% else %}
                 <li><a href="#">Groups</a></li>
-                <li><a href="{% url 'accounts:login' %}">Log In</a></li>
+                <li><a href="{% url 'accounts:login' %}"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
                 <li><a href="{% url 'accounts:signup' %}">Sign Up</a></li>
             {% endif %}
         </ul>
