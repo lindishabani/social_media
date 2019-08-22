@@ -12,7 +12,7 @@ class CreateGroup(generic.CreateView):
     model = Group
 
 
-class SingleGroup(generic.DeleteView):
+class SingleGroup(generic.DetailView):
     model = Group
 
 
